@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+        }
+
+        .container {
+            width: 350px;
+            margin: 20px auto;
+            background: #fff;
+            border: 4px solid blue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .logo {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* Thanh điều hướng */
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: underline;
+            color: blue;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Bố cục 2 cột */
+        .row {
+            display: flex;
+            justify-content: center; /* căn giữa ngang */
+            align-items: center;     /* căn giữa dọc */
+            margin-bottom: 40px;
+            padding: 0 20px;
+            height: 200px; /* đặt chiều cao để dễ thấy căn giữa */
+        }
+
+        .column1, .column {
+            width: 40%;
+            text-align: left; /* căn chữ giữa */
+            padding: 10px;
+        }
+
+        .column1 {
+            border-right: 2px solid black;
+        }
+
+        .column h3, .column1 h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            font-size: 14px;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        footer a {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+  <h1 align="center">PHÂN HỆU ĐẠI HỌC GIAO THÔNG VẬN TẢI</h1>
+    <div class="container">
+        <header>
+            <div class="logo"><img src="utc2.jpg" width="50" height="50" align="center"> - UTC2</div>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#">Presentation</a>
+            <a href="#">Studies</a>
+            <a href="#">Staff</a>
+        </nav>
+
+        <!-- Content -->
+        <div class="row">
+            <div class="column1">
+                <h3>News</h3>
+                <p>News 1 – Date<br>
+                Description</p>
+                <p>News 2 – Date<br>
+                Description</p>
+            </div>
+            <div class="column">
+                <h3>Announcements</h3>
+                <p>Open course 1<br>
+                Description</p>
+                <p>Open course 2<br>
+                Description</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Contact: <a href="mailto:info@university.com">info@university.com</a></p>
+            <p>(c) University, 2011</p>
+        </footer>
+    </div>
+</body>
+</html>
